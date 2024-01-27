@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inputArea">
+            <div class="encabezado">
+                <img src="imagenes/Logo.svg" alt="Logo Alura">
+            </div>
+            <input onclick="limpiarCaja()" class="area" type="text" name="input-texto" id="input-texto" value="Ingresa el texto aquí..." />
+            <div class="botones">
+                <label for="input-texto">🚨 Solo letras minúsculas y sin acentos.</label>
+                <button class="btn btn-encriptar" type="button" onclick="encriptar()">Encriptar!</button>
+                <button class="btn btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar!</button>
+            </div>
+        </div>
+
+        <div class="outputArea" id="outputArea">
+            <div class="text-outputArea" >
+                <h3>No se han encontrado mensajes aún</h3>
+                <p>Ingrese texto a encriptar</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <footer>® 2024 Creado por Mianlo </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
