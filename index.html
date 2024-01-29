@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
-<body>
+<body class="whiteMode">
     <div class="container">
         <div class="inputArea">
             <div class="encabezado">
-                <img src="imagenes/Logo.svg" alt="Logo Alura">
+                <img class="logo" src="imagenes/Logo.svg" alt="Logo Alura">
+                <button class="botonModo" id="toggle-dark-mode-btn">Cambiar Modo🌜</button>
+
             </div>
-            <input onclick="limpiarCaja()" class="area" type="text" name="input-texto" id="input-texto" pattern="[a-z]" value="Ingresa el texto aquí..." />
+            <textarea onclick="limpiarCaja()" id="input-texto" rows="5" cols="50">Ingrese el texto aquí...
+            </textarea>
             <div class="botones">
                 <div class="leyenda">
                     <label for="input-texto">🚨 Solo letras minúsculas y sin acentos.</label>

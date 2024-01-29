@@ -83,4 +83,23 @@ function copiarTexto() { // Utiliza la variable global para copiar el texto encr
             console.error('Error al intentar copiar el texto: ', err);
         });
 }
-
+// Función para alternar entre el modo claro y oscuro
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  
+    // Guarda la preferencia de modo en localStorage
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+  }
+  
+  // Verifica la preferencia de modo almacenada en localStorage al cargar la página
+  document.addEventListener('DOMContentLoaded', function() {
+    const isDarkModeStored = localStorage.getItem('darkMode');
+    if (isDarkModeStored && isDarkModeStored === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+  });
+  
+  // Ejemplo de asignar la función al botón con el ID 'toggle-dark-mode-btn'
+  document.getElementById('toggle-dark-mode-btn').addEventListener('click', toggleDarkMode);
+  
