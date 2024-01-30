@@ -32,14 +32,14 @@ function encriptar() {
 
 function desencriptar() {
     var texto = document.querySelector("#input-texto").value;
-    textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
-    document.getElementById('outputArea').innerText = textoCifrado;
-
+    textoEncriptadoGlobal = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+    document.getElementById('outputArea').innerText = textoEncriptadoGlobal;
+    crearBoton();
     // Elimina el botón Copiar si existe al desencriptar
-    var btnCopiarExistente = document.getElementById('btnCopiar');
+    /* var btnCopiarExistente = document.getElementById('btnCopiar');
     if (btnCopiarExistente) {
         btnCopiarExistente.remove();
-    }
+    } */
 
 }
 

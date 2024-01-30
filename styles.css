@@ -39,14 +39,16 @@
   
   .inputArea {
     width: 58%;
-    height: 85vh;
+    height: 75vh;
     border: 1px solid black;
   }
   
   .inputArea textarea {
+    border: 1px solid black;
     width: 100%;
-    height: 70%;
-    background-color: #F3F5FC;
+    height: 50%;
+    margin: 0 auto;
+    /* background-color: red; */
     margin-top: 20px;
     border: none;
     border-radius: 15px;
@@ -71,7 +73,7 @@
     height: 140px;
     padding-left: 10px;
     margin-top: 25px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   
   .leyenda {
@@ -88,7 +90,7 @@
     width: 60%;
     height: 50px;
     padding: 0 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   
   .botones input {
@@ -128,6 +130,7 @@
     background-color: white;
     border: 2px solid #0A3871;
     color: #0A3871;
+    transition: 1s;
   }
   
   .outputArea {
@@ -135,7 +138,7 @@
     flex-direction: column;
     align-items: center;
     width: 28%;
-    height: 85vh;
+    height: 82vh;
     border-radius: 10px;
     background-image: url(imagenes/Muñeco.png);
     background-position: center;
@@ -144,6 +147,7 @@
   }
   
   .outputArea-salida {
+    width: 28%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -152,13 +156,13 @@
     color: #0A3871;
     overflow-wrap: anywhere;
     overflow-y: auto;
-    max-width: 90%;
     font-size: 20px;
     font-weight: bolder;
-    text-align: center;
+    vertical-align: top;
     display: flex;
     flex-direction: column;
     align-items: center;
+    vertical-align: text-top;
 }
   
   
@@ -166,7 +170,7 @@
     width: 90%;
     height: 20%;
     max-height: 30%;
-    color: #0A3871;
+    color: #121212;
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
@@ -186,6 +190,7 @@
     color: white;
     font-size: 20px;
     cursor: pointer;
+    transition: 1s;
   }
   
   .btn-copiar:hover {
@@ -196,14 +201,14 @@
   
   footer {
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: #0A3871;
     /* background-color: transparent; */
     /* border: 1px solid red; */
-    margin-top: 40px;
+    margin-top: 20px;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   body.dark-mode label {
     color: white;
@@ -222,9 +227,19 @@ body.dark-mode .outputArea-salida {
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
 }
 
+body.dark-mode .text-outputArea {
+  color: #0A3871; 
+}
+
+@media (max-width:2560px) {
+  .inputArea textarea {
+    height: 60vh;
+  }
+ }
+
 @media (max-width:1440px) {
   .inputArea {
-    height: 82vh;
+    height: 70vh;
   }
  }
  @media (max-width:1208px) {
@@ -243,11 +258,15 @@ body.dark-mode .outputArea-salida {
   }
  }
 @media (max-width:1024px) {
- .inputArea {
-   height: 68vh;
+ .inputArea  {
+   height: 70vh;
  }
  .outputArea {
-    height: 90vh;
+    height: 80vh;
+ }
+ 
+ footer {
+  margin-top: 70px;
  }
 }
 @media (max-width:927px) {
@@ -266,27 +285,34 @@ body.dark-mode .outputArea-salida {
  }
  @media (max-width:768px) {
    body {
-    margin-top: 0;
+    margin-top: 30px;
    }
   .container {
     display: flex;
     flex-direction: column;
   }
-  .inputArea {
-    height: 55vh;
+  .inputArea  {
+    height: 48vh;
     width: 95%;
     margin: 0 auto;
+  }
+  .inputArea textarea {
+    height: 40vh;
+    font-size: 30px;
   }
   .outputArea {
      display: flex;
      flex-direction:column;
      align-items: top;
      width: 95%;
-     height: 15vh;
-     margin: 90px auto 0 auto;
+     height: 20vh;
+     margin: 150px auto 0 auto;
      background-image: none;
      background-color: white;
+     color: #0A3871;
+     
   }
+  
   .leyenda {
     height: 10px;
   }
@@ -295,30 +321,51 @@ body.dark-mode .outputArea-salida {
     flex-direction: column;
     align-items: center; 
     width: 95%;
-    height: 25vh;
-    margin: 80px auto 0 auto;
+    height: 20vh;
+    margin: 150px auto 0 auto;
     overflow-wrap: anywhere;
     overflow-y: auto;
     background-image: none;
     background-color: white;
 }
 
-  .text-outputArea {
-    width: 90%;
-    height: 100%;
-    max-height: 30%;
-    color: #0A3871;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: top;
-    border-radius: 15px;
-    /* background-color: red; */
-    margin-bottom: 70px;
-  }
+.text-outputArea {
+  width: 90%;
+  height: 100%;
+  max-height: 30%;
+  color: #0A3871;
+  font-size: 20px; /* Puedes ajustar el tamaño según tus necesidades */
+  font-weight: bolder;
+  text-align: top;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
   footer {
+    margin-top: 20px;
     height: 70px;
   }
  }
-
-
+@media (max-width:425) {
+  body {
+    background-color: aqua;
+    height: 200%;
+  }
+  .container {
+    width:95%;
+    height: 200vh;
+  }
+  .inputArea  {
+    
+    width: 95%;
+    margin: 0 auto;
+  }
+  .inputArea textarea {
+    
+    font-size: 30px;
+  }
+  .text-outputArea {
+    font-size: smaller;
+  }
+}
  
