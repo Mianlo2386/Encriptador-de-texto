@@ -148,6 +148,7 @@
   
   .outputArea-salida {
     width: 28%;
+    height: 75vh;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -201,20 +202,22 @@
   
   footer {
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: #0A3871;
     /* background-color: transparent; */
     /* border: 1px solid red; */
-    margin-top: 20px;
+    margin-top: 70px;
     color: white;
     text-align: center;
     padding: 20px 0;
   }
-  body.dark-mode label {
+
+
+body.dark-mode label {
     color: white;
   }
   
-  body.dark-mode .inputArea textarea {
+body.dark-mode .inputArea textarea {
     background-color: #121212;
     color: white; 
 }
@@ -352,7 +355,7 @@ body.dark-mode .text-outputArea {
     height: 70px;
   }
  }
-@media (max-width:425) {
+@media (max-width:px) {
   body {
     background-color: aqua;
     height: 200%;
@@ -374,4 +377,13 @@ body.dark-mode .text-outputArea {
     font-size: smaller;
   }
 }
- 
+@media (max-width:320px) {
+  .inputArea  {
+    
+    width: 95%;
+    margin: 30px auto;
+  }
+  .botones {
+    margin-top: 20px;
+  }
+}
