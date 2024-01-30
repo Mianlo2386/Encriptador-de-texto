@@ -39,15 +39,15 @@
   
   .inputArea {
     width: 58%;
-    height: 75vh;
-    border: 1px solid black;
+    height: 20vh;
+    /* border: 1px solid black; */
   }
   
   .inputArea textarea {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-    height: 50%;
-    margin: 0 auto;
+    height: 20vh;
+    
     /* background-color: red; */
     margin-top: 20px;
     border: none;
@@ -57,7 +57,7 @@
     font-weight: bold;
     outline: none;
     overflow-wrap: anywhere;
-    max-width: 90%;
+    
     color: #0A3871;
     text-align: left;
     vertical-align: top;
@@ -72,7 +72,7 @@
     width: 100%;
     height: 140px;
     padding-left: 10px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     /* border: 1px solid black; */
   }
   
@@ -138,7 +138,7 @@
     flex-direction: column;
     align-items: center;
     width: 28%;
-    height: 82vh;
+    height: 75vh;
     border-radius: 10px;
     background-image: url(imagenes/Muñeco.png);
     background-position: center;
@@ -238,8 +238,8 @@ body.dark-mode .text-outputArea {
  }
 
 @media (max-width:1440px) {
-  .inputArea {
-    height: 70vh;
+  .inputArea textarea {
+    height: 50vh;
   }
  }
  @media (max-width:1208px) {
@@ -249,7 +249,13 @@ body.dark-mode .text-outputArea {
  }
  @media (max-width:1158px) {
   .inputArea {
-    height: 78vh;
+    height: 80vh;
+  }
+  .outputArea {
+    height: 80vh;
+  }
+  .text-outputArea {
+    margin-bottom: 20px;
   }
  }
  @media (max-width:1103px) {
