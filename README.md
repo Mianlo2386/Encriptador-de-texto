@@ -7,6 +7,7 @@ Este proyecto es parte del challenge realizado para el curso de ONE-Alura Latam.
 - **Encriptación y Desencriptación:** Convierte texto normal a texto encriptado y viceversa.
 - **Modo Oscuro:** Cambia la apariencia del sitio a un modo oscuro para mejorar la legibilidad en entornos con poca luz.
 
+
 ## Tecnologías Utilizadas
 
 - **HTML:** Estructura básica de la página web.
@@ -15,8 +16,9 @@ Este proyecto es parte del challenge realizado para el curso de ONE-Alura Latam.
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](capturas/captura1.png)
-![Captura de Pantalla 2](capturas/captura2.png)
+![Captura de Pantalla 1]![Encriptador1](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/f87a24fc-99cd-48bf-a42f-e19031cd3ece)
+![Captura de Pantalla 2]![Encriptador2](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/02a19766-d5b2-44d1-aa2d-09f26dce0953)
+![Encriptador1](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/f87a24fc-99cd-48bf-a42f-e19031cd3ece)
 
 ## Uso
 
