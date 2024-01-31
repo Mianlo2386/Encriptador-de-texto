@@ -15,10 +15,9 @@ Este proyecto es parte del challenge realizado para el curso de ONE-Alura Latam.
 - **JavaScript:** Lógica de encriptación/desencriptación y control de eventos.
 
 ## Capturas de Pantalla
+![image](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/c1cb349f-478b-420e-8580-514570be7f84)
+![image](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/357dc8ec-31a3-474f-9c7c-c9d566293369)
 
-![Captura de Pantalla 1]![Encriptador1](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/f87a24fc-99cd-48bf-a42f-e19031cd3ece)
-![Captura de Pantalla 2]![Encriptador2](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/02a19766-d5b2-44d1-aa2d-09f26dce0953)
-![Encriptador1](https://github.com/Mianlo2386/Encriptador-de-texto/assets/116380765/f87a24fc-99cd-48bf-a42f-e19031cd3ece)
 
 ## Uso
 
