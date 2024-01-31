@@ -202,7 +202,7 @@
   
   footer {
     width: 100%;
-    height: 50px;
+    height: 9.7vh;
     background-color: #0A3871;
     /* background-color: transparent; */
     /* border: 1px solid red; */
@@ -275,7 +275,7 @@ body.dark-mode .text-outputArea {
  }
  
  footer {
-  margin-top: 70px;
+  margin-top: 20px;
  }
 }
 @media (max-width:927px) {
@@ -343,7 +343,7 @@ body.dark-mode .text-outputArea {
   height: 100%;
   max-height: 30%;
   color: #0A3871;
-  font-size: 20px; /* Puedes ajustar el tamaño según tus necesidades */
+  font-size: 20px; 
   font-weight: bolder;
   text-align: top;
   border-radius: 15px;
@@ -355,35 +355,49 @@ body.dark-mode .text-outputArea {
     height: 70px;
   }
  }
-@media (max-width:px) {
+
+ @media (max-width:426px) {
   body {
-    background-color: aqua;
-    height: 200%;
-  }
-  .container {
-    width:95%;
-    height: 200vh;
+    border: 1px solid black;
+    margin-top: 0;
   }
   .inputArea  {
-    
     width: 95%;
-    margin: 0 auto;
+    height: 42vh;
+    margin: 30px auto;
   }
-  .inputArea textarea {
-    
-    font-size: 30px;
+  .btn-encriptar,
+  .btn-desencriptar {
+    justify-content: center;
+    font-size: 15px;
+    width: 50%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0A3871;
+    color: white;
+  }
+  .areaBotones {
+    width: 80%;
+    gap: 15px;
   }
   .text-outputArea {
-    font-size: smaller;
+    width: 90%;
+    height: 20%;
+    color: #0A3871;
+    font-size: 15px; 
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
   }
 }
+
 @media (max-width:320px) {
   .inputArea  {
-    
     width: 95%;
     margin: 30px auto;
   }
-  .botones {
-    margin-top: 20px;
-  }
+  
 }
